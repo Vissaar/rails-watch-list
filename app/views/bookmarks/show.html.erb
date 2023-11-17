@@ -1,0 +1,7 @@
+<p><strong>Bookmarks</strong></p>
+<ul class="list-group">
+  <% @list.bookmark.each do |bookmark| %>
+    <li class="list-group-item"><%= bookmark.name %></li>
+  <% end %>
+</ul>
+<br>

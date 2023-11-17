@@ -1,0 +1,9 @@
+Hello from show
+<!-- app/views/restaurants/show.html.erb -->
+<li class="list-group-item">
+  <%= bookmark.content %>
+  <%= link_to "Delete",
+    bookmark_path(bookmark),
+    data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+  %>
+</li>
